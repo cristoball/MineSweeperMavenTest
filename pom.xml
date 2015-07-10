@@ -3,7 +3,7 @@
   <groupId>Main</groupId>
   
   <artifactId>MineSweeper</artifactId> 	
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <name>Mine Sweeper</name>
   <description>Java Mine Sweeper Clone of Old Windows Game</description>
   

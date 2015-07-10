@@ -9,6 +9,7 @@ import java.awt.event.MouseListener;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  * @author Christoball
@@ -185,6 +186,27 @@ public class GridSpaceObserver extends MouseAdapter
 		}
 	}
 
+	public void mouseEntered(MouseEvent evtMouse)
+	{
+		int nTest = evtMouse.MOUSE_PRESSED;
+		int nButton1DownMask = MouseEvent.BUTTON1_DOWN_MASK;
+		int nModifiers = evtMouse.getModifiers();
+		
+		//JOptionPane.showMessageDialog(null, evtMouse.getButton() + "");
+		//GridSpaceButton gridBtn = (GridSpaceButton) evtMouse.getComponent();
+		//gridBtn.setIcon(Resources.getResources().icon0Mines);			
+
+	}
+	
+	public void mouseExited(MouseEvent evtMouse)
+	{
+		
+//		int nTest = evtMouse.getButton();
+//		if (nTest == MouseEvent.MOUSE_PRESSED)
+//		{
+//			JOptionPane.showMessageDialog(evtMouse.getComponent(), evtMouse.getComponent().getName());
+//		}
+	}
 
 	/**
 	 * @param gameView

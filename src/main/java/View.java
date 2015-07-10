@@ -82,10 +82,8 @@ public class View extends JFrame implements ActionListener
 	 */
 	public View(int width, int height, int nMineCount, GridSpaceObserver observer, GameButtonObserver gameBtnObserver)
 	{	
-		this.setTitle(Resources.GAME_TITLE);
-		//super(" Mine Sweeper");
-		//ImageIcon img = Resources.getResources().iconRedMine;
-		ImageIcon img = new ImageIcon(getClass().getResource("RedMine.png"));
+		this.setTitle(Resources.GAME_TITLE);		
+		ImageIcon img = Resources.getResources().iconRedMine;
 		setIconImage(img.getImage());
 				
 		_nWidth = width;
@@ -149,7 +147,7 @@ public class View extends JFrame implements ActionListener
 	{
 		super.setLocationByPlatform(true);
 		//setLocationRelativeTo(null); //center screen
-		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		//CENTER SCREEN
 		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 		setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);

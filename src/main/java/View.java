@@ -285,7 +285,8 @@ public class View extends JFrame implements ActionListener
 		//com.sun.java.swing.plaf.windows.WindowsLookAndFeel
 		try 
 		{
-			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //try to look like the Windows old MineSweeper game
+			UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+			//UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //try to look like the Windows old MineSweeper game
 		} 
 		catch (Exception e) 
 		{

@@ -64,6 +64,7 @@ public class Controller implements Runnable
 	 */
 	public void setView() 
 	{
+		
 		if (Settings.PLAYER_LEVEL == Settings.BEGINNER)
 		{
 			_nWidth = 8;

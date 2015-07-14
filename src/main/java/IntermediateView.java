@@ -55,7 +55,7 @@ public class IntermediateView extends View
 		this.add(pnlMineField, BorderLayout.SOUTH);
 		//this.setMinimumSize(new Dimension(16 * width + 25, 16 * height + 60));
 		
-		this.setMinimumSize(new Dimension(390, 504));
+		this.setMinimumSize(new Dimension(390, 520));
 		this.setResizable(false);
 		//this.setResizable(true);
 		//pack();
